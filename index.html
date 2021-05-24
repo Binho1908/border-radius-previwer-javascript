@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border radius previewer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+        <div id="border">
+        </div>
+        
+        <div class="radius">
+            <input type="number" name="" id="topleft" placeholder="top-left" min="0" max="100" oninput="atualiza()">
+            
+            <input type="number" name="" id="bottomleft" placeholder="bottom-left" min="0" max="100" oninput="atualiza()">
+            
+            <input type="number" name="" id="topright" placeholder="top-right" min="0" max="100" oninput="atualiza()">
+            
+            <input type="number" name="" id="bottomright" placeholder="bottom-right" min="0" max="100" oninput="atualiza()">
+             
+        </div>
+
+        <input type="text" value="" id="elementos">
+            
+
+        </div>
+        <div class="tooltip">
+            <button onclick="myFunction()" onmouseout="outFunc()">
+              <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+              Copy text
+              </button>
+        </div>
+            
+    <script src="script.js"></script>
+</body>
+</html>
